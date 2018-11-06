@@ -10,3 +10,5 @@ summary(Q2)
 anova(Q2, test="Chisq") ## chisq test on predictor from model
 
 lsmeans(Q2, pairwise~Microsite, adjust="tukey") ##conduct pairwise comparisons on predictor
+
+QQ <- decostand(multivar, method="hellinger")
